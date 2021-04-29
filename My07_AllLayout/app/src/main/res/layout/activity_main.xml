@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="300">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#D3D0D0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#D3D0D0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#D3D0D0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:backgroundTint="#D3D0D0" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            app:backgroundTint="#D3D0D0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnImg"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이미지 바꾸기"
+            android:textSize="14sp"
+            app:backgroundTint="#D3D0D0" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image01"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image02"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnImg2"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="115dp"
+            android:layout_marginLeft="115dp"
+            android:text="이미지 바꾸어 보여주기"
+            app:backgroundTint="#D3D0D0" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100">
+
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image01"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/image02"
+                        android:visibility="gone" />
+
+
+                </FrameLayout>
+
+
+            </ScrollView>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>
