@@ -40,15 +40,15 @@ public class MainActivity extends AppCompatActivity {
 
         // 어댑터에 있는 ArrayList에 dto를 5개 추가한다
         adapter.addDto(new SingerDto("블랙핑크", "010-1111-1111",
-                25, R.drawable.singer1));
+                25, R.drawable.dream03));
         adapter.addDto(new SingerDto("걸스데이", "010-1111-2222",
-                27, R.drawable.singer2));
+                27, R.drawable.dream03));
         adapter.addDto(new SingerDto("방탄소년단", "010-1111-3333",
-                22, R.drawable.singer3));
+                22, R.drawable.dream03));
         adapter.addDto(new SingerDto("마마무", "010-1111-4444",
-                30, R.drawable.singer4));
+                30, R.drawable.dream03));
         adapter.addDto(new SingerDto("소녀시대", "010-1111-5555",
-                28, R.drawable.singer5));
+                28, R.drawable.dream03));
         // 만든 어댑터를 리스트뷰에 붙인다
         gridView.setAdapter(adapter);
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/board1"
+        android:title="Free"
+        android:enabled="true"
+        android:icon="@drawable/bottom1"
+        />
+
+    <item
+        android:id="@+id/board2"
+        android:title="Notice"
+        android:enabled="true"
+        android:icon="@drawable/bottom2" />
+
+    <item
+        android:id="@+id/board3"
+        android:title="FAQ"
+        android:enabled="true"
+        android:icon="@drawable/bottom3" />
+
+</menu>

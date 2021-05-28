@@ -84,7 +84,7 @@ public class SingerAdapter extends BaseAdapter {
             viewHolder.tvName = convertView.findViewById(R.id.tvName);
             viewHolder.tvMobile = convertView.findViewById(R.id.tvMobile);
             viewHolder.ivImage = convertView.findViewById(R.id.ivImage);
-            viewHolder.ivTrash = convertView.findViewById(R.id.ivTrash);
+            /*viewHolder.ivTrash = convertView.findViewById(R.id.ivTrash);*/
 
             convertView.setTag(viewHolder);
         }else { // 캐시된 뷰가 있을 경우 저장된 뷰홀더를 사용한다
@@ -118,13 +118,13 @@ public class SingerAdapter extends BaseAdapter {
         });
 
         // 휴지통 클릭시 그 항목 삭제하는 리스너
-        viewHolder.ivTrash.setOnClickListener(new View.OnClickListener() {
+        /*viewHolder.ivTrash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dtos.remove(position);
                 notifyDataSetChanged();
             }
-        });
+        });*/
 
         // 만들어진 뷰를 반환
         return convertView;
@@ -194,7 +194,7 @@ public class SingerAdapter extends BaseAdapter {
 
 
     public class SingerViewHolder{
-        public ImageView ivImage, ivTrash;
+        public ImageView ivImage;
         public TextView tvName, tvMobile;
     }
 
